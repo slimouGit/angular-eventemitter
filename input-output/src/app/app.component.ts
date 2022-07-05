@@ -11,14 +11,11 @@ export class AppComponent {
   myCar = 'SMART';
 
   items = ['item1', 'item2', 'item3', 'item4'];
-  cars = [''];
+  
 
   addItem(newItem: string) {
     this.items.push(newItem);
   }
 
-  addCar(car: string) {
-    console.log(car)
-    this.cars.push(car)
-  }
+ 
 }
