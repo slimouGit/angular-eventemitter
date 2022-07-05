@@ -2,6 +2,6 @@
 
 <app-car-detail (carEvent)="addCar($event)"></app-car-detail>
 
-<ul>
+<ul *ngIf="cars.length > 0">
     <li *ngFor="let car of cars">{{car}}</li>
 </ul>

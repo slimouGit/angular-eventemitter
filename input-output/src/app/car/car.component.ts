@@ -9,7 +9,9 @@ export class CarComponent  {
   cars = [''];
   addCar(car: string) {
     console.log(car)
-    this.cars.push(car)
+    if(car != ''){  
+      this.cars.push(car)
+    }
   }
 
 }
