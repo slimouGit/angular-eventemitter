@@ -1,7 +1,9 @@
-<p>car works!</p>
+<p>car component!</p>
 
-<app-car-detail (carEvent)="addCar($event)"></app-car-detail>
+<label for="model">Model:</label>
+<input [(ngModel)]="car.model" type="text" id="model" >
+<label for="color">Color:</label>
+<input [(ngModel)]="car.color" type="text" id="color" >
+<button type="button" (click)="onAddCar()">Add new Car</button>
 
-<ul *ngIf="cars.length > 0">
-    <li *ngFor="let car of cars">{{car}}</li>
-</ul>
+<hr>

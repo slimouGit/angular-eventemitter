@@ -3,18 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
-import { ItemDetailComponent } from './item-detail/item-detail.component';
-import { ItemOutputComponent } from './item-output/item-output.component';
 import { CarComponent } from './car/car.component';
-import { CarDetailComponent } from './car-detail/car-detail.component';
+import { CarPoolComponent } from './car-pool/car-pool.component';
+import { CarMyCarComponent } from './car-my-car/car-my-car.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemDetailComponent,
-    ItemOutputComponent,
     CarComponent,
-    CarDetailComponent
+    CarPoolComponent,
+    CarMyCarComponent
   ],
   imports: [
     BrowserModule,

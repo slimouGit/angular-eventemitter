@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemOutputComponent } from './item-output.component';
+import { CarPoolComponent } from './car-pool.component';
 
-describe('ItemOutputComponent', () => {
-  let component: ItemOutputComponent;
-  let fixture: ComponentFixture<ItemOutputComponent>;
+describe('CarPoolComponent', () => {
+  let component: CarPoolComponent;
+  let fixture: ComponentFixture<CarPoolComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ItemOutputComponent ]
+      declarations: [ CarPoolComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ItemOutputComponent);
+    fixture = TestBed.createComponent(CarPoolComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
