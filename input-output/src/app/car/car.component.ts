@@ -1,4 +1,6 @@
-import { Component} from '@angular/core';
+import { Component, Output, EventEmitter, Input} from '@angular/core';
+import { Car } from '../car';
+
 
 @Component({
   selector: 'app-car',
@@ -6,12 +8,17 @@ import { Component} from '@angular/core';
   styleUrls: ['./car.component.css']
 })
 export class CarComponent  {
-  cars = [''];
-  addCar(car: string) {
-    console.log(car)
-    if(car != ''){  
-      this.cars.push(car)
+
+  
+  @Output() carEvent = new EventEmitter<Car>();
+
+  car:Car = new Car('','');
+
+  onAddCar(){
+    if(this.car.model != '' && this.car.color != ''){
+      this.carEvent.emit(new Car(this.car.model,this.car.color))
     }
   }
+ 
 
 }
