@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-car-my-car',
@@ -6,6 +6,7 @@ import { Component, Input, ViewChild } from '@angular/core';
   styleUrls: ['./car-my-car.component.css']
 })
 export class CarMyCarComponent {
+
 
   @Input() myCar:string = '';
   @Input() myCarColor:string = '';
