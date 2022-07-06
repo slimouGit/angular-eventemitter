@@ -8,17 +8,21 @@ import { Component, Input, ViewChild } from '@angular/core';
 export class CarMyCarComponent {
 
   @Input() myCar:string = '';
+  @Input() myCarColor:string = '';
 
-  @ViewChild('myCarColor') definedCarColor: any;
+  @ViewChild('myLocalCarColor') definedCarColor: any;
 
   changeMyCarName(myCarName:HTMLInputElement){
     console.log(myCarName.value)
     this.myCar = myCarName.value;
   }
 
-  defineMyCarColor(myCarColor:HTMLInputElement){
-    console.log(myCarColor.value)
+  defineMyCarColor(myCarColor:HTMLInputElement){   
+    
     this.definedCarColor = myCarColor.value
+    console.log(this.definedCarColor)
+    this.myCarColor = this.definedCarColor
+    
   }
 
 }

@@ -2,11 +2,13 @@
 <p>
     My Car: {{myCar}}
 </p>
+<p *ngIf="myCarColor !== ''">
+    My CarColor: {{myCarColor}}
+</p>
 
 <input type="text" #myCarName>
 <button (click)="changeMyCarName(myCarName)">Change my Car Name</button>
 <br>
-<input type="text" #myCarColor>
-<button (click)="defineMyCarColor(myCarColor)">Change my Car Color</button>
-
+<input type="text" #myLocalCarColor>
+<button (click)="defineMyCarColor(myLocalCarColor)">Change my Car Color</button>
 <hr>

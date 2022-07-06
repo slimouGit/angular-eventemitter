@@ -10,6 +10,7 @@ export class CarPoolComponent {
     
    cars:Car[] = [];
    myCar = 'SMART';
+   myCarColor = 'silver'
 
    addCar(car: Car) {
       this.cars.push(car)    
